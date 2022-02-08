@@ -136,13 +136,14 @@ h5{
   .map {
     background-color: rgba(0, 0, 0, 0.7);
     margin-top: 20px;
-    margin: auto;
     padding: 10px 20px;
     box-sizing: border-box;
     color: #fff;
     font-family: 'Quicksand', sans-serif;
     box-shadow: 0 0 20px 0 #fff;
     border-radius: 1%;
+    height: auto;
+    width: 400px;
   
     ul, p {
       text-align: center;
@@ -226,10 +227,10 @@ h5{
   }
   
 @media (max-width:480px) {
-  form{
-    width: 100%;
-  }
   .grid{
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
   }
 }
