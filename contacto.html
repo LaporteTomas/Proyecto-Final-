@@ -48,18 +48,40 @@
     <div class="grid">
       
         <form class="formulario" action="">
-          <h2>Contacto</h2>
-          <label>Nombre</label>
-          <input type="text" name="Nombre" placeholder="John">
-          <label>Apellido</label>
-          <input type="text" name="Apellido" placeholder="Doe">
-          <label>Mail</label>
-          <input type="mail" name="Mail">
-          <label for="Telefono">Telefono</label>
-          <input type="text" name="Telefono" placeholder="">
-          <label>Escribe aqui tu mensaje</label>
-          <textarea name="Mensaje"></textarea>
-          <input type="button" class="boton" value="Enviar">
+          <fieldset>
+            <h2>Comunicate con nosotros</h2>
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="name" placeholder="Juan">               
+            </div>
+            <div>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="apellido" 
+                placeholder="Perez">               
+            </div>
+            <br>
+            <div>
+                <label for="email">Mail</label>
+                <input type="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="Pais">Asunto</label>
+                <select name="Pais" id="">
+                    <option value="Consulta">CONSULTA</option>
+                    <option value="Receta">RECETA</option>
+                </select>
+            </div>
+            <div>
+                <label for="Comentario">Dejanos tu mensaje</label>
+                <br>
+                <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+                <br>
+            </div>
+            <div>
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+        </fieldset>
         </form>
       
       
